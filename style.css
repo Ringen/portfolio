@@ -75,12 +75,9 @@ p {
 }
 
 .sub-section-content {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	align-content: center;
-	justify-content: center;
-	margin-top: 1.5em;
+	display: block;
+	margin: 1.5em auto 0;
+	max-width: 40em;
 }
 
 .competences {
@@ -90,11 +87,12 @@ p {
 }
 
 .experience {
-	box-sizing: border-box;
-	width: 25%;
-	max-width: 260px;
-	padding: 0 0.5em;
 	text-align: left;
+	margin-top: 2em;
+}
+
+.experience:first-child {
+	margin-top: 0;
 }
 
 .experience-text {
@@ -121,7 +119,11 @@ p {
 }
 
 .logo {
-	width: 180px;
+	width: 150px;
+}
+
+.logo-wrapper {
+	height: 3.3em;
 }
 
 .logo--svtplay {
@@ -172,12 +174,36 @@ p {
 	.experience-text {
 		font-size: 1em;
 	}
+
+	.experience {
+		width: 49%;
+		padding: 0 0.5em;
+		display: inline-block;
+		vertical-align: top;
+		box-sizing: border-box;
+	}
+
+	.experience:nth-child(2) {
+		margin-top: 0;
+	}
 }
 
 @media only screen and (min-width: 760px) {
-
+	.experience {
+		max-width: 290px;
+		padding: 0 0.5em;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
+	.experience {
+		width: 25%;
+		max-width: 260px;
+		margin-top: 0;
+		padding: 0 0.5em;
+	}
 
+	.sub-section-content {
+		max-width: none;
+	}
 }

@@ -17,7 +17,7 @@ p {
 }
 
 .bg-1 {
-	padding: 100px 0 30px 0;
+	padding: 4em 0 1.5em 0;
 	background-color: #4f5f79;
 	color: #ffffff;
 }
@@ -37,20 +37,20 @@ p {
 }
 
 .portrait {
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 }
 
 .main-heading {
-	font-size: 3em;
+	font-size: 2em;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 
 .sub-heading {
-	font-size: 2.5em;
+	font-size: 1.8em;
 	font-weight: normal;
 	display: inline-block;
 	margin: 0;
@@ -84,7 +84,7 @@ p {
 }
 
 .competences {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin-top: 0.5em;
 	font-weight: normal;
 }
@@ -99,10 +99,12 @@ p {
 
 .experience-text {
 	width: auto;
+	font-size: 0.95em;
+	line-height: 1.3em;
 }
 
 .contact {
-	margin: 50px 0 30px 0;	
+	margin: 2em 0 1.5em 0;	
 }
 
 .contact-link {
@@ -130,6 +132,8 @@ p {
 }
 
 .about-text {
+	font-size: 0.95em;
+	line-height: 1.3em;
 	text-align: left;
 	max-width: 40em;
 	margin: 1em auto;
@@ -144,4 +148,36 @@ p {
 .about-link:hover {
 	color: #444444;
 	text-decoration: none;
+}
+
+@media only screen and (min-width: 450px) {
+	.portrait {
+		width: 300px;
+		height: 300px;
+	}
+
+	.main-heading {
+		font-size: 3em;
+	}
+
+	.competences {
+		font-size: 1.2em;
+	}
+
+	.sub-heading {
+		font-size: 2.5em;
+	}
+
+	.about-text,
+	.experience-text {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 760px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
 }

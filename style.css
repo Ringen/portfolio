@@ -94,6 +94,7 @@ p {
 	width: 25%;
 	max-width: 260px;
 	padding: 0 0.5em;
+	text-align: left;
 }
 
 .experience-text {
@@ -118,8 +119,7 @@ p {
 }
 
 .logo {
-	width: 200px;
-	margin: 0 30px;
+	width: 180px;
 }
 
 .logo--svtplay {
